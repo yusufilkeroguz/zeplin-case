@@ -10,33 +10,34 @@ import IconStickyNotes from "../Icons/StickyNotes";
 
 const Article = () => {
   return (
-    <div className="border-2 border-[#DFE3F1] rounded-[20px] bg-white pl-[9px] pr-5 py-[15px] flex items-end justify-between flex-nowrap">
+    <div className="border-2 border-[#DFE3F1] rounded-[20px] bg-white pl-[9px] pr-5 py-[15px] flex flex-col xl:flex-row items-center xl:items-end justify-between flex-nowrap">
       <div>
         <div className="space-x-3">
           <CategoryBadge type="navy" label="İklim" />
           <CategoryBadge type="default" label="Araştırma Makalesi" />
         </div>
-        <div className="text-h6 font-bold flex items-center gap-3 text-zeplin-black my-3">
-          <IconPdf fill="var(--color-zeplin-stone)" />
+        <div className="text-lg xl:text-h6 font-bold flex items-center gap-3 text-zeplin-black my-3">
+          <IconPdf fill="var(--color-zeplin-stone)" className="shrink-0" />
           Türkiye’nin Teknoloji Politikaları ve Döngüsel Ekonomi
         </div>
         <div className="flex items-center gap-3">
           <span className="flex items-center gap-2">
-            <span className="bg-[#F0F0F3] rounded-full w-[26px] h-[26px] flex items-center justify-center">
+            <span className="bg-[#F0F0F3] rounded-full w-[26px] h-[26px] flex items-center justify-center shrink-0">
               <IconStickyNotes
                 fill="var(--color-zeplin-black)"
                 height={15}
-                width={"auto"}
+                className="shrink-0"
               />
             </span>
             Sayfa: <b>12-18</b>
           </span>
           <span className="flex items-center gap-2">
-            <span className="bg-[#F0F0F3] rounded-full w-[26px] h-[26px] flex items-center justify-center">
+            <span className="bg-[#F0F0F3] rounded-full w-[26px] h-[26px] flex items-center justify-center shrink-0">
               <IconAuthor
                 fill="var(--color-zeplin-black)"
                 height={15}
                 width={15}
+                className="shrink-0"
               />
             </span>
             Elif Başkaya Acar, Emre Taran, Halil Başar

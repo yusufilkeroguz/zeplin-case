@@ -9,7 +9,7 @@ const Hero = () => {
       </div>
 
       <div className="absolute z-10 flex items-center flex-wrap h-full text-white">
-        <div className="max-w-md mx-auto px-3 md:px-6 lg:px-8">
+        <div className="max-w-md mx-auto px-3 md:px-6 xl:px-8">
           <h2 className="text-h2">Profuture Teknoloji Dergisi</h2>
           <h1 className="text-h1 mb-4">Son Sayı Yayında</h1>
           <p className="text-lg leading-[25px]">

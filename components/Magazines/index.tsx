@@ -17,12 +17,12 @@ const Magazines = () => {
     number: 1,
   };
   return (
-    <section className="container mx-auto mb-40">
-      <div className="flex justify-between items-center flex-wrap mb-8">
+    <section className="container mx-auto mb-40 px-4 xl:px-0">
+      <div className="flex justify-between items-end flex-nowrap mb-8">
         <div className="flex flex-nowrap gap-5">
           <div>
-            <h2 className="text-h5 text-zeplin-stone">Sayılar</h2>
-            <h5 className="text-h2 text-zeplin-navy leading-[28px] font-bold">
+            <h2 className="text-base xl:text-h5 text-zeplin-stone">Sayılar</h2>
+            <h5 className="text-lg xl:text-h2 text-zeplin-navy leading-[28px] font-bold">
               Dergiler
             </h5>
           </div>

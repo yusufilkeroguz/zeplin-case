@@ -43,3 +43,7 @@ body {
   --text-h1-line-height: 38px;
   --text-h1-weight: 700;
 }
+
+.scoop {
+  corner-shape: scoop;
+}

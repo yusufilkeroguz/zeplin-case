@@ -21,18 +21,18 @@ const Magazine: FC<MagazineProps> = ({
   number = 1,
 }) => {
   return (
-    <div className="flex relative bg-white border border-[#E9F4F8] rounded-2xl p-4 pr-8">
+    <div className="flex flex-col xl:flex-row relative bg-white border border-[#E9F4F8] rounded-2xl p-4 pr-8">
       <img src={image} alt={name} className="rounded-l-2xl rounded-b-2xl" />
-      <div className="pl-4 flex flex-col justify-between">
+      <div className="pl-4 flex flex-col justify-between pt-4">
         <div className="flex items-start justify-between flex-nowrap pb-4">
           {icon}
           {badge}
         </div>
-        <h5 className="text-xl text-zeplin-navy leading-[28px] font-bold">
+        <h5 className="text-xl text-zeplin-navy leading-[28px] font-bold mb-4 xl:mb-0">
           {name}
         </h5>
 
-        <div className="flex items-center gap-4 text-zeplin-black text-base leading-[18px]">
+        <div className="flex items-center gap-4 text-zeplin-black text-base leading-[18px] mb-4 xl:mb-0">
           <span className="flex items-center gap-1.5">
             <IconCilt fill="var(--color-zeplin-black)" width={17} height={17} />
             Cilt: <b>{bind}</b>
@@ -47,7 +47,7 @@ const Magazine: FC<MagazineProps> = ({
           </span>
         </div>
 
-        <span className="text-base leading-[18px] text-zeplin-black flex items-center gap-1.5 font-bold">
+        <span className="text-base leading-[18px] text-zeplin-black flex items-center gap-1.5 font-bold mb-4 xl:mb-0">
           <IconCalendar
             fill="var(--color-zeplin-black)"
             width={18}

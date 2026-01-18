@@ -8,13 +8,14 @@ import IconEye from "../Icons/Eye";
 
 const Articles = () => {
   return (
-    <section className="container mx-auto flex items-start justify-between gap-6 pb-40 mt-32">
-      <div className="px-5 pt-6 pb-3.5 bg-white rounded-3xl border-[5px] border-[#FFD9DA] max-w-[478px] shrink-0">
+    <section className="container mx-auto flex items-start flex-wrap xl:flex-nowrap justify-between gap-6 pb-40 mt-32 px-4 xl:px-0">
+      <div className="px-5 pt-6 pb-3.5 bg-white rounded-3xl border-[5px] border-[#FFD9DA] w-full max-w-[478px] shrink-0 mx-auto xl:mx-0">
         <Image
           src="/article-bg.png"
           alt="article-bg"
           width={428}
           height={641}
+          className="w-full max-w-[428px] mx-auto xl:mx-0"
         />
 
         <div className="flex items-center justify-center gap-2 mt-3.5">
@@ -37,9 +38,9 @@ const Articles = () => {
       </div>
       <div className="w-full">
         <div className="flex items-center justify-between pb-10 mt-8">
-          <div className="text-zeplin-stone text-h5 font-medium">
+          <div className="text-zeplin-stone text-base xl:text-h5 font-medium">
             <h2>Profuture Teknoloji Dergisi</h2>
-            <h3 className="text-zeplin-red font-bold text-h2">
+            <h3 className="text-zeplin-red font-bold text-lg xl:text-h2">
               Güncel Yazılar
             </h3>
           </div>

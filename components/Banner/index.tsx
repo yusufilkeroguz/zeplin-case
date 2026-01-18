@@ -5,12 +5,18 @@ import IconPromotion from "../Icons/Promotion";
 
 const Banner = () => {
   return (
-    <section className="container mx-auto h-[439px] bg-[url('/banner-bg.png')] bg-no-repeat bg-cover bg-center relative pt-4">
-      <div className="z-20 text-center">
-        <span className="absolute left-0 top-0">
-          <Image src="/banner-left.png" alt="Banner" width={514} height={439} />
+    <section className="container mx-auto min-h-[439px] bg-[url('/banner-bg.png')] bg-no-repeat bg-cover bg-center relative pt-4">
+      <div className="z-20 text-left 2xl:text-center">
+        <span className="hidden 2xl:block relative lg:absolute lg:left-0 top-0">
+          <Image
+            src="/banner-left.png"
+            alt="Banner"
+            width={514}
+            height={439}
+            className="w-full lg:max-w-[257px] 2xl:max-w-[514px]"
+          />
         </span>
-        <div className="max-w-xl mx-auto flex items-start justify-center flex-wrap pt-7">
+        <div className="max-w-xl mx-0 2xl:mx-auto flex items-start justify-start 2xl:justify-center flex-wrap pt-7 pl-8 2xl:pl-0">
           <div className="flex-[0_0_100%]">
             <IconPromotion
               fill="var(--color-zeplin-red)"
@@ -45,12 +51,13 @@ const Banner = () => {
             Makale Gönder
           </Button>
         </div>
-        <span className="absolute right-2 bottom-2">
+        <span className="relative lg:absolute right-2 bottom-2">
           <Image
             src="/banner-right.png"
             alt="Banner"
             width={336}
             height={495}
+            className="mx-auto lg:mx-0"
           />
         </span>
       </div>

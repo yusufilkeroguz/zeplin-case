@@ -27,7 +27,7 @@ const Pagination: FC<IPaginationProps> = ({
         }));
 
   return (
-    <div className="flex items-center gap-4">
+    <div className="flex items-center gap-2 xl:gap-4">
       <Button onClick={() => pageChange(-1)} isDisabled={true}>
         <IconArrowLeft width={14} height={14} fill="var(--color-zeplin-gray)" />
       </Button>
